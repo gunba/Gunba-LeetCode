@@ -9,7 +9,7 @@ class RandomizedSet(object):
         :type val: int
         :rtype: bool
         """
-        if not val in self.s:
+        if val not in self.s:
             self.s.append(val)
             return True
         else:
